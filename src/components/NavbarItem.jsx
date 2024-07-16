@@ -5,5 +5,9 @@ import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
 export default function NavbarItem({ title, param }) {
-  return <div>test</div>;
+  return (
+    <div>
+      <Link href={`/?genre=${param}`}>{title}</Link>
+    </div>
+  );
 }
